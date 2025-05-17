@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Job Helper Options</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+        label { display: block; margin-top: 15px; margin-bottom: 5px; }
+        textarea { width: 100%; min-height: 200px; box-sizing: border-box; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { padding: 10px 15px; margin-top: 20px; cursor: pointer; background-color: #4CAF50; color: white; border: none; }
+        #status { margin-top: 15px; color: green; }
+    </style>
+</head>
+<body>
+    <h1>AI Job Helper Options</h1>
+
+    <label for="apiKey">Gemini API Key:</label>
+    <input type="password" id="apiKey" name="apiKey">
+
+    <label for="userResume">Your Base Resume (Plain Text):</label>
+    <textarea id="userResume" name="userResume" placeholder="Paste your full resume text here..."></textarea>
+
+    <button id="saveOptions">Save Options</button>
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+</body>
+</html>
